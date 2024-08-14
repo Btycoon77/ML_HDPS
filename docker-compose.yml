@@ -1,0 +1,36 @@
+version: '3'
+
+services:
+  react:
+    build:
+      context: .
+      dockerfile: Dockerfile.clients
+    ports:
+      - "3000:3000"
+    depends_on:
+      - express
+      - flask
+
+  express:
+    build:
+      context: .
+      dockerfile: Dockerfile.servers
+    ports:
+      - "8000:8000"
+
+  flask:
+    build:
+      context: ./server
+      dockerfile: Dockerfile.flask
+    ports:
+      - "5000:5000"
+
+  mongodb:
+    image: mongo:latest
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongodb_data:/data/db
+
+volumes:
+  mongodb_data:

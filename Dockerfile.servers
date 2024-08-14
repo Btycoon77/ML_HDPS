@@ -1,0 +1,20 @@
+# Dockerfile for Express and Flask Servers
+FROM node:18
+
+# Set the working directory
+WORKDIR /app
+
+# Copy package.json and package-lock.json for Express
+COPY server/package*.json ./
+
+# Install dependencies
+RUN npm install
+
+# Copy the rest of the application code
+COPY server/ .
+
+# Expose the port the server runs on
+EXPOSE 8000
+
+# Start the application
+CMD ["npm", "start"]

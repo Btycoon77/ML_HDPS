@@ -1,0 +1,90 @@
+.result-layout {
+    background: #f5f5f5;
+    min-height: 100vh;
+    padding: 30px;
+  }
+  
+  .result-card {
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .result-title {
+    color: #1890ff;
+    margin-bottom: 20px;
+  }
+  
+  .result-info {
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .result-info p {
+    margin: 10px 0;
+  }
+  
+  .result-predictions p {
+    font-size: 18px;
+    color: #ff4d4f; /* Red color for warnings */
+  }
+  
+  .result-predictions b {
+    color: #1890ff;
+  }
+  
+  .result-accuracies {
+    margin-top: 20px; /* Space above the accuracies section */
+    padding: 15px;    /* Padding inside the section */
+  }
+  
+  .result-accuracies p {
+    margin: 10px 0; /* Vertical margin between paragraphs */
+    padding: 8px; /* Padding for paragraphs */
+    font-size: 16px; /* Font size */
+    font-weight: bold; /* Bold text */
+  }
+  
+  .result-accuracies p:nth-child(1) {
+    color: #FF5722; /* Deep orange for the first paragraph */
+  }
+  
+  .result-accuracies p:nth-child(2) {
+    color: #3F51B5; /* Indigo for the second paragraph */
+  }
+  
+  .result-accuracies p:nth-child(3) {
+    color: #4CAF50; /* Green for the third paragraph */
+  }
+  
+  .result-accuracies p:nth-child(4) {
+    color: #F44336; /* Red for the fourth paragraph */
+  }
+  
+  .result-accuracies p:nth-child(5) {
+    color: #2196F3; /* Blue for the fifth paragraph */
+  }
+  
+  .result-accuracies p:nth-child(6) {
+    color: #9C27B0; /* Purple for the sixth paragraph */
+  }
+  
+  .result-accuracies p:nth-child(7) {
+    color: #FFC107; /* Amber for the seventh paragraph */
+  }
+  
+  .result-accuracies p:nth-child(8) {
+    color: #FF9800; /* Orange for the eighth paragraph */
+  }
+  
+  .result-accuracies b {
+    color: #333; /* Dark gray for bold text */
+  }
+  
+  .result-accuracies b::after {
+    content: ':'; /* Add a colon after bold text */
+    margin-left: 5px; /* Space between bold text and value */
+  }
+  

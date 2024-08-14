@@ -1,0 +1,33 @@
+{
+  "name": "ehealthcare",
+  "version": "1.0.0",
+  "description": "this is project on ehealthcare",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "Ram Mahat",
+  "license": "ISC",
+  "dependencies": {
+    "@tensorflow/tfjs": "^4.6.0",
+    "axios": "^1.4.0",
+    "bcryptjs": "^2.4.3",
+    "child_process": "^1.0.2",
+    "concurrently": "^7.6.0",
+    "cors": "^2.8.5",
+    "csv-parser": "^3.0.0",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "joi": "^17.9.1",
+    "jsonwebtoken": "^9.0.0",
+    "moment": "^2.29.4",
+    "mongoose": "^7.0.3",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.22",
+    "path": "^0.12.7"
+  }
+}

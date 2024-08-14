@@ -1,0 +1,20 @@
+# Dockerfile for Python Environment
+FROM python:3.9
+
+# Set the working directory
+WORKDIR /app
+
+# Copy requirements.txt
+COPY myenv/requirements.txt .
+
+# Install dependencies
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Copy the rest of the application code
+COPY myenv/ .
+
+# Expose the port the Flask app runs on
+EXPOSE 5000
+
+# Start the Flask application
+CMD ["python", "api.py"]
