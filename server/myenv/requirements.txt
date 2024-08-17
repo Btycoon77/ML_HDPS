@@ -5,3 +5,5 @@ joblib==1.2.0
 numpy==1.25.1
 seaborn==0.12.2
 matplotlib==3.8.0
+Werkzeug==3.0.3
+
